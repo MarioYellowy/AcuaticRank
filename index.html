@@ -4,29 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CSS/style.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <title>AcuaticRank</title>
 
 </head>
 
 <body>
-    <div class="fondo-img">
-        <img class="fondo-img" src="img/fondo.png">
         <!-- Navbar Start  -->
         <div class="nav-bar-conteiner">
             <nav class="nav-bar">
                 <a href="index.html">
                     <h1 class="nav-text">LOGO</h1>
                 </a>
-                <div>
+                <div class="">
                     <a class="nav-text" href="index.html">Home</a>
                     <a class="nav-text" href="ganancias.html">Ganancias</a>
                     <a class="nav-text" href="gastos.html">Gastos</a>
+                    <a  class="nav-text" href="ahorros.html">Ahorros</a>
                     <a class="nav-text" href="login.html">Login</a>
                 </div>
             </nav>
         </div>
     </div>
+    
+    <div class="welcome-conteiner">
+        <div class="img-conteiner">
+            <img src="img/ahorro.png" alt="imagen de ahorro">
+        </div>
+        <div>
+            <h3 class="welcome-tittle">Gestiona tu Dinero ¡YA!</h3>
+        <p class="welcome-text">Nuestra plataforma te ofrece una solución integral para administrar tus finanzas de manera eficiente y sin complicaciones. Desde el seguimiento de tus ingresos hasta el análisis detallado de tus gastos, te proporcionamos las herramientas necesarias para tomar el control total de tu situación financiera, permitiéndote alcanzar tus objetivos y asegurar un futuro económico estable.</p>
+        </div>
+        
+    </div>
+    <div class="fondo-img">
+        <img class="fondo-img" src="img/fondo.png">
 </body>
 
 </html>
