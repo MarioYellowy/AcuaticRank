@@ -1,0 +1,35 @@
+.fondo-img {
+    width: 100%;
+    height: 100%;
+    background-color: #FF0000;
+}
+
+.nav-bar-conteiner {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 100px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 30px;
+    margin-left: 40px;
+}
+
+.nav-text {
+    color: #FFFF;
+    text-align: center;
+    font-size: 36px;
+    margin-right: 65px;
+    padding-left: 12px;
+}
+
+.nav-text:hover {
+    color: #000;
+}
+
