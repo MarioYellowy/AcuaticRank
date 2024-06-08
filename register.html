@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link href="CSS/register.css" rel="stylesheet">
+    <style>
+        .fondo-img {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url("img/fondo.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .nav-text {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 18px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .register-form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .register-form h2 {
+            margin-bottom: 20px;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        .register-form input {
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .register-form button {
+            padding: 10px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .register-form p {
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .register-form p a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="fondo-img">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="img/logo.jpeg" alt="Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Ganancias</a></li>
+                        <li><a href="#">Gastos</a></li>
+                        <li><a href="#">Ahorros</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="login">Login</a>
+            </header>
+            <main>
+                <div class="register-form">
+                    <h2>Register</h2>
+                    <form>
+                        <input type="email" placeholder="Correo" required>
+                        <input type="password" placeholder="Contraseña" required>
+                        <input type="password" placeholder="Repita su Contraseña" required>
+                        <button type="submit">Crear Cuenta</button>
+                    </form>
+                    <p>Ya tienes una cuenta? <a href="#">Iniciar Sesión</a></p>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
+
 </html>
