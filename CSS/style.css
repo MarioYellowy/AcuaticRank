@@ -1,19 +1,20 @@
 .fondo-img {
     width: 100%;
     height: 100%;
-    background-color: #FF0000;
 }
 
 .nav-bar-conteiner {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 0px;
     right: 100px;
     width: 100%;
     z-index: 1;
+    background-color: null;
 }
 
 .nav-bar {
+    color: #FFFF;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -22,14 +23,48 @@
 }
 
 .nav-text {
+    display: inline;
+    text-decoration:none;
     color: #FFFF;
+    font-family: "Mohave", sans-serif;
     text-align: center;
-    font-size: 36px;
-    margin-right: 65px;
-    padding-left: 12px;
+    font-size: 2em;
+    padding: 0 0.5em;
 }
 
 .nav-text:hover {
-    color: #000;
+    border: 2px solid #FFFF;
+    border-radius: 0.6rem;
 }
+
+.welcome-conteiner {
+    background-color: #1D2B44;
+    opacity: 95%;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    margin: 100px 10%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcome-tittle {
+    color: #FFFF;
+    font-family: "Mohave", sans-serif;
+    font-size: 3.5em;
+    background-color: red;
+    
+
+}
+
+.welcome-text {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFF;
+    font-family: "Mohave", sans-serif;
+    font-size: 1em;
+}
+
 
